@@ -771,6 +771,8 @@
                 </div>
 
                 <!-- booklist table start -->
+                <!-- booklist table start -->
+                <!-- booklist table start -->
                 <div id="booklist-table" class="booklist-table">
                     <div class="container">
                         <div class="row bg-danger text-white text-center booklist-row">
@@ -906,9 +908,10 @@
                 <!-- booklist table end -->
                 <!-- booklist table end -->
                 <!-- =================================================================================== -->
-                <!-- add routine section start -->
-                <!-- add routine section start -->
-                <!-- add routine section start -->
+
+                <!-- add routine(class,diet,workout) section start -->
+                <!-- add routine(class,diet,workout) section start -->
+                <!-- add routine(class,diet,workout) section start -->
 
                 <div class="routine-inner">
                     <div id="routine-top-btn-section">
@@ -919,18 +922,28 @@
                             <button id="workout-routine" class="text-capitalize px-0 margin-left">Work- Out Routine </button>
                         </div>
 
+                        <!-- class routine btn icon start -->
                         <div id="created-class-routine" class="created-book-list text-center">
                             <i class="fas fa-plus"></i>
-                            <h3>Create A Routine</h3>
+                            <h3>Create A Class Routine</h3>
                         </div>
+                        <!-- class routine btn icon end -->
+
+                        <!-- class routine btn icon start -->
+                        <div id="created-diet-routine" class="created-book-list text-center">
+                            <i class="fas fa-plus"></i>
+                            <h3>Create A Diet Routine</h3>
+                        </div>
+                        <!-- class routine btn icon end -->
                     </div>
 
 
 
 
+                    <div>
 
-                    <div id="routine-user-input">
-                        <h3 class="routine-headline">Give A Routine Name </h5>
+                        <div id="routine-user-input">
+                            <h3 class="routine-headline">Give A Routine Name </h3>
                             <div class="get-user-input">
                                 <input type="text" class="user-input-field text-capitalize">
                             </div>
@@ -969,287 +982,521 @@
                                 <button id="choosDayNext" class="cmnBtn border-0 mr-3">Next</button>
                                 <button id="choosDayCancel" class="cmnBtn">Cancel</button>
                             </div>
-                    </div>
+                        </div>
 
-                    <!-- routine table start here -->
-                    <!-- routine table start here -->
-                    <div class="routine-table-section">
-                        <div class="routine-table-inner">
-                            <div id="class-routine-table-section">
-                                <div class="routine-table-head">
-                                    <h4 class="table-head text-capitalize">Abcd Academy</h5>
-                                </div>
-                                <div class="d-flex routine-table-body-section">
-                                    <div class="order-3 routine-coloum">
-                                        <ul class="mx-0 px-0">
-                                            <li class="border-handle">
-                                                <h4 class="selection-day-col mb-0">Select</h4>
-                                            </li>
-                                            <li> <span class="d-block select-time-heading text-left">Time</span></li>
-                                            <li>
-                                                <label for="sat" class="checkbox-container text-capitalize">Saturday
+                        <!-- class routine table start here -->
+                        <!-- class routine table start here -->
+                        <div class="routine-table-section">
+                            <div class="routine-table-inner">
+                                <div id="class-routine-table-section">
+                                    <div class="routine-table-head">
+                                        <h4 class="table-head text-capitalize">Abcd Academy</h5>
+                                    </div>
+                                    <div class="d-flex routine-table-body-section">
+                                        <div class="order-3 routine-coloum">
+                                            <ul class="mx-0 px-0">
+                                                <li class="border-handle">
+                                                    <h4 class="selection-day-col mb-0">Select</h4>
+                                                </li>
+                                                <li> <span class="d-block select-time-heading text-left">Time</span></li>
+                                                <li>
+                                                    <label for="sat" class="checkbox-container text-capitalize">Saturday
                                                         <input id="sat" type="checkbox" checked>
                                                         <span class="checkmark"></span>
                                                       </label>
-                                            </li>
-                                            <li>
-                                                <label for="sun" class="checkbox-container text-capitalize">sunday
+                                                </li>
+                                                <li>
+                                                    <label for="sun" class="checkbox-container text-capitalize">sunday
                                                         <input id="sun" type="checkbox" checked>
                                                         <span class="checkmark"></span>
                                                       </label>
-                                            </li>
-                                            <li>
-                                                <label for="mon" class="checkbox-container text-capitalize">Monday
+                                                </li>
+                                                <li>
+                                                    <label for="mon" class="checkbox-container text-capitalize">Monday
                                                         <input id="mon" type="checkbox" checked>
                                                         <span class="checkmark"></span>
                                                     </label>
-                                            </li>
-                                            <li>
-                                                <label for="tues" class="checkbox-container text-capitalize">Tuesday
+                                                </li>
+                                                <li>
+                                                    <label for="tues" class="checkbox-container text-capitalize">Tuesday
                                                         <input id="tues" type="checkbox" checked>
                                                         <span class="checkmark"></span>
                                                     </label>
-                                            </li>
-                                            <li>
-                                                <label for="wed" class="checkbox-container text-capitalize">Wednesday
+                                                </li>
+                                                <li>
+                                                    <label for="wed" class="checkbox-container text-capitalize">Wednesday
                                                         <input id="wed" type="checkbox" checked>
                                                         <span class="checkmark"></span>
                                                     </label>
-                                            </li>
-                                            <li>
-                                                <label for="thurs" class="checkbox-container text-capitalize">Thursday
+                                                </li>
+                                                <li>
+                                                    <label for="thurs" class="checkbox-container text-capitalize">Thursday
                                                         <input id="thurs" type="checkbox" checked>
                                                         <span class="checkmark"></span>
                                                     </label>
-                                            </li>
-                                            <li>
-                                                <label for="fr" class="checkbox-container text-capitalize">Friday
+                                                </li>
+                                                <li>
+                                                    <label for="fr" class="checkbox-container text-capitalize">Friday
                                                         <input id="fr" type="checkbox">
                                                         <span class="checkmark"></span>
                                                     </label>
-                                            </li>
+                                                </li>
 
-                                        </ul>
-                                    </div>
-                                    <div class="order-3 routine-coloum">
-                                        <ul class="mx-0 px-0">
-                                            <li><input type="text" class="selection-day-col" value="1st class"></li>
-                                            <li>
-                                                <div class="d-flex time-input-container">
-                                                    <input type="time" class="select-time-input" value="09:30:00">
-                                                    <span>to</span>
-                                                    <input type="time" class="select-time-input" value="09:30:00">
-                                                </div>
-                                            </li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="order-3 routine-coloum">
-                                        <ul class="mx-0 px-0">
-                                            <li><input type="text" class="selection-day-col" value="1st class"></li>
-                                            <li>
-                                                <div class="d-flex time-input-container">
-                                                    <input type="time" class="select-time-input" value="09:30:00">
-                                                    <span>to</span>
-                                                    <input type="time" class="select-time-input" value="09:30:00">
-                                                </div>
-                                            </li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="order-4 routine-coloum addColoum-margin">
-                                        <ul class="px-0">
-                                            <li><input type="btn" class="selection-day-col" id="addMore-routine-btn" value="Add More"></li>
-                                            <li><input type="text" class="input-class-subject addMore-btn-input"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="addBtn-group">
-                                    <div id="create-routine-buitton-container">
-                                        <div class="d-flex justify-content-end btn-bootom">
-                                            <button id="createRoutineBtn" class="cmnBtn mr-3">Create Now</button>
-                                            <button id="cancelCreateRoutineBtn" class="cmnBtn mr-3">Cancel</button>
+                                            </ul>
+                                        </div>
+                                        <div class="order-3 routine-coloum">
+                                            <ul class="mx-0 px-0">
+                                                <li><input type="text" class="selection-day-col" value="1st class"></li>
+                                                <li>
+                                                    <div class="d-flex time-input-container">
+                                                        <input type="time" class="select-time-input" value="09:30:00">
+                                                        <span>to</span>
+                                                        <input type="time" class="select-time-input" value="09:30:00">
+                                                    </div>
+                                                </li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="order-3 routine-coloum">
+                                            <ul class="mx-0 px-0">
+                                                <li><input type="text" class="selection-day-col" value="1st class"></li>
+                                                <li>
+                                                    <div class="d-flex time-input-container">
+                                                        <input type="time" class="select-time-input" value="09:30:00">
+                                                        <span>to</span>
+                                                        <input type="time" class="select-time-input" value="09:30:00">
+                                                    </div>
+                                                </li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="order-4 routine-coloum addColoum-margin">
+                                            <ul class="px-0">
+                                                <li><input type="btn" class="selection-day-col" id="addMore-routine-btn" value="Add More"></li>
+                                                <li><input type="text" class="input-class-subject addMore-btn-input"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- static value for user create routine -->
-                            <div id="after-created-routine">
-                                <div class="after-created-routine-header">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="flex">
-                                            <span class="text-capitalize">ABCD Academy</span>
-                                            <span id="created-new-classRoutine" class="text-capitalize"> <i class="fa fa-plus-circle" aria-hidden="true"></i> created a new routine </span>
-                                        </div>
-                                        <div class="user-edit-input ">
-                                            <div class="d-flex justify-content-end">
-                                                <i id="edit-class-routine" class="fas fa-edit" title="Edit Input"></i>
-                                                <i id="delete-class-routine" class="fas fa-trash-alt" title="Remove Row"></i>
+
+                                    <div class="addBtn-group">
+                                        <div id="create-routine-buitton-container">
+                                            <div class="d-flex justify-content-end btn-bootom">
+
+                                                <div id="classroutine-editBtn-top">
+                                                    <button id="createRoutineBtn" class="cmnBtn mr-3">Create Now</button>
+                                                    <button id="cancelCreateRoutineBtn" class="cmnBtn mr-3">Cancel</button>
+                                                </div>
+                                                <div id="classroutine-editBtn-bottom">
+                                                    <button id="afterEditRoutineSaveBtn" class="cmnBtn mr-3">Save</button>
+                                                    <button id="cancelEditRoutineSaveBtn" class="cmnBtn mr-3">Cancel</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-flex routine-table-body-section">
-                                    <div class="order-3 routine-coloum">
-                                        <ul class="mx-0 px-0">
-                                            <li class="border-handle">
-                                                <h4 class="selection-day-col mb-0">Select</h4>
-                                            </li>
-                                            <li> <span class="d-block select-time-heading text-left">Time</span></li>
-                                            <li>
-                                                <label class="checkbox-container text-capitalize">Saturday</label>
-                                            </li>
-                                            <li>
-                                                <label class="checkbox-container text-capitalize">sunday</label>
-                                            </li>
-                                            <li>
-                                                <label class="checkbox-container text-capitalize">Monday  </label>
-                                            </li>
-                                            <li>
-                                                <label class="checkbox-container text-capitalize">Tuesday</label>
-                                            </li>
-                                            <li>
-                                                <label class="checkbox-container text-capitalize">Wednesday</label>
-                                            </li>
-                                            <li>
-                                                <label class="checkbox-container text-capitalize">Thursday</label>
-                                            </li>
-                                            <li>
-                                                <label class="checkbox-container text-capitalize">Friday</label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="order-3 routine-coloum">
-                                        <ul class="mx-0 px-0">
-                                            <li><input type="text" class="selection-day-col" value="1st class"></li>
-                                            <li>
-                                                <div class="set-routine-input">
-                                                    <i class="fas fa-clock"></i>
-                                                    <input class="fixed-class-time" value="9:30 AM to 9:30 Am">
+                                <!-- static value for user create routine -->
+                                <div id="after-created-routine">
+                                    <div class="after-created-routine-header">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="flex">
+                                                <span class="text-capitalize">ABCD Academy</span>
+                                                <span id="created-new-classRoutine" class="text-capitalize"> <i class="fa fa-plus-circle" aria-hidden="true"></i> created a new routine </span>
+                                            </div>
+                                            <div class="user-edit-input ">
+                                                <div class="d-flex justify-content-end">
+                                                    <i id="edit-class-routine" class="fas fa-edit" title="Edit Input"></i>
+                                                    <i id="delete-class-routine" class="fas fa-trash-alt" title="Remove Row"></i>
                                                 </div>
-                                            </li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                        </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="order-3 routine-coloum">
-                                        <ul class="mx-0 px-0">
-                                            <li><input type="text" class="selection-day-col" value="2nd class"></li>
-                                            <li>
-                                                <div class="d-none time-input-container">
-                                                    <input type="time" class="select-time-input" value="09:30:00">
-                                                    <span>to</span>
-                                                    <input type="time" class="select-time-input" value="09:30:00">
-                                                </div>
-                                                <p class="fixed-class-time"> <i class="fas fa-clock"></i>9:30 AM to 9:30 Am</p>
-                                            </li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="order-3 routine-coloum">
-                                        <ul class="mx-0 px-0">
-                                            <li><input type="text" class="selection-day-col" value="3rd class"></li>
-                                            <li>
-                                                <div class="set-routine-input">
-                                                    <i class="fas fa-clock"></i>
-                                                    <input class="fixed-class-time" value="9:30 AM to 9:30 Am">
-                                                </div>
-                                            </li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="order-3 routine-coloum">
-                                        <ul class="mx-0 px-0">
-                                            <li><input type="text" class="selection-day-col" value="4th class"></li>
-                                            <li>
-                                                <div class="set-routine-input">
-                                                    <i class="fas fa-clock"></i>
-                                                    <input class="fixed-class-time" value="9:30 AM to 9:30 Am">
-                                                </div>
-                                            </li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="order-3 routine-coloum">
-                                        <ul class="mx-0 px-0">
-                                            <li><input type="text" class="selection-day-col" value="5th class"></li>
-                                            <li>
-                                                <div class="set-routine-input">
-                                                    <i class="fas fa-clock"></i>
-                                                    <input class="fixed-class-time" value="9:30 AM to 9:30 Am">
-                                                </div>
-                                            </li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject" value="Bangla"></li>
-                                            <li><input type="text" class="input-class-subject"></li>
-                                        </ul>
+                                    <div class="d-flex routine-table-body-section">
+                                        <div class="order-3 routine-coloum">
+                                            <ul class="mx-0 px-0">
+                                                <li class="border-handle">
+                                                    <h4 class="selection-day-col mb-0">Select</h4>
+                                                </li>
+                                                <li> <span class="d-block select-time-heading text-left">Time</span></li>
+                                                <li>
+                                                    <label class="checkbox-container text-capitalize">Saturday</label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-container text-capitalize">sunday</label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-container text-capitalize">Monday  </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-container text-capitalize">Tuesday</label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-container text-capitalize">Wednesday</label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-container text-capitalize">Thursday</label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox-container text-capitalize">Friday</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="order-3 routine-coloum">
+                                            <ul class="mx-0 px-0">
+                                                <li><input type="text" class="selection-day-col" value="1st class"></li>
+                                                <li>
+                                                    <div class="set-routine-input">
+                                                        <i class="fas fa-clock"></i>
+                                                        <input class="fixed-class-time" value="9:30 AM to 9:30 Am">
+                                                    </div>
+                                                </li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="order-3 routine-coloum">
+                                            <ul class="mx-0 px-0">
+                                                <li><input type="text" class="selection-day-col" value="2nd class"></li>
+                                                <li>
+                                                    <div class="d-none time-input-container">
+                                                        <input type="time" class="select-time-input" value="09:30:00">
+                                                        <span>to</span>
+                                                        <input type="time" class="select-time-input" value="09:30:00">
+                                                    </div>
+                                                    <p class="fixed-class-time"> <i class="fas fa-clock"></i>9:30 AM to 9:30 Am</p>
+                                                </li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="order-3 routine-coloum">
+                                            <ul class="mx-0 px-0">
+                                                <li><input type="text" class="selection-day-col" value="3rd class"></li>
+                                                <li>
+                                                    <div class="set-routine-input">
+                                                        <i class="fas fa-clock"></i>
+                                                        <input class="fixed-class-time" value="9:30 AM to 9:30 Am">
+                                                    </div>
+                                                </li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="order-3 routine-coloum">
+                                            <ul class="mx-0 px-0">
+                                                <li><input type="text" class="selection-day-col" value="4th class"></li>
+                                                <li>
+                                                    <div class="set-routine-input">
+                                                        <i class="fas fa-clock"></i>
+                                                        <input class="fixed-class-time" value="9:30 AM to 9:30 Am">
+                                                    </div>
+                                                </li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="order-3 routine-coloum">
+                                            <ul class="mx-0 px-0">
+                                                <li><input type="text" class="selection-day-col" value="5th class"></li>
+                                                <li>
+                                                    <div class="set-routine-input">
+                                                        <i class="fas fa-clock"></i>
+                                                        <input class="fixed-class-time" value="9:30 AM to 9:30 Am">
+                                                    </div>
+                                                </li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject" value="Bangla"></li>
+                                                <li><input type="text" class="input-class-subject"></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
+                    <!-- class routine table end here -->
+                    <!-- class routine table end here -->
+
+                    <!-- ============================================================ -->
+
+                    <!-- diet routine start here -->
+                    <!-- diet routine start here -->
+                    <!-- diet routine start here -->
+
+                    <div id="diet-routine-section">
+                        <div class="diet-routine-head">
+                            <div class="diet-routine-input">
+                                <h3 class="routine-headline">Give A Routine Name </h5>
+                                    <div class="get-user-input">
+                                        <input type="text" class="user-input-field text-capitalize">
+                                    </div>
+                                    <div>
+                                        <h4 class="choose-day">Diet Starting Date</h4>
+                                        <div class="choose-date d-flex">
+                                            <div class="calendar">
+                                                <img src="images/icons/calendar-line.svg" alt="calendar-line">
+                                            </div>
+
+                                            <div class="select-date-field d-flex">
+                                                <div>
+                                                    <img class="left-angel" src="images/icons/Polygon 15.svg" alt="">
+                                                </div>
+                                                <input type="date" class="selectDiet-date">
+                                                <div>
+                                                    <img class="right-angel" src="images/icons/Polygon 14.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex btn-bootom">
+                                        <button id="dietChoosDateNextBtn" class="cmnBtn border-0 mr-3">Next</button>
+                                        <button id="dietChoosDateCancelBtn" class="cmnBtn">Cancel3</button>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="diet-routine-inner text-center after-created-routine-header">
+                            <div id="diet-routine-edit-section">
+                                <div class="d-flex justify-content-between diet-routine-edit-section">
+                                    <div class="flex">
+                                        <span class="text-capitalize">ABCD Academy</span>
+                                        <span id="created-new-dietRoutine" class="text-capitalize"> <i class="fa fa-plus-circle" aria-hidden="true"></i> created a new routine </span>
+                                    </div>
+                                    <div class="user-edit-input ">
+                                        <div class="d-flex justify-content-end">
+                                            <i id="edit-diet-routine" class="fas fa-edit" title="Edit diet routine"></i>
+                                            <i id="delete-diet-routine" class="fas fa-trash-alt" title="Remove Diet Routine"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="diet-routine-getuserInput">
+                                <h5 class="text-left mt-4">ABCD Academy</h6>
+                                    <div class="choose-date d-flex  align-items-center">
+
+                                        <h4 class="choose-day">Diet Starting Date</h4>
+                                        <div class="calendar">
+                                            <img src="images/icons/calendar-line.svg" alt="calendar-line">
+                                        </div>
+
+                                        <div class="select-date-field d-flex">
+                                            <div>
+                                                <img class="left-angel" src="images/icons/Polygon 15.svg" alt="">
+                                            </div>
+                                            <input type="date" class="selectDiet-date">
+                                            <div>
+                                                <img class="right-angel" src="images/icons/Polygon 14.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="diet-routine-section-table">
+                                <div id="diet-routine-table" class="diet-routine-table">
+                                    <div class="diet-routine-table-head">
+                                        <div class="diet-routine-table-head-caption">
+                                            <h4>Meals</h4>
+                                        </div>
+                                        <div class="diet-routine-table-head-caption">
+                                            <h4>Time</h4>
+                                        </div>
+                                        <div class="diet-routine-table-head-caption">
+                                            <h4>Saturday</h4>
+                                        </div>
+                                        <div class="diet-routine-table-head-caption">
+                                            <h4>Sunday</h4>
+                                        </div>
+                                        <div class="diet-routine-table-head-caption">
+                                            <h4>Monday</h4>
+                                        </div>
+                                        <div class="diet-routine-table-head-caption">
+                                            <h4>Tuesday</h4>
+                                        </div>
+                                        <div class="diet-routine-table-head-caption">
+                                            <h4>Wednesday</h4>
+                                        </div>
+                                        <div class="diet-routine-table-head-caption">
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div class="diet-routine-table-head-caption last-day">
+                                            <h4>Friday</h4>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="diet-routine-table-body">
+                                        <div class="diet-routine-table-body-text">
+                                            <input type="text" class="diet-meals-title" value="Breakfast">
+                                        </div>
+                                        <div class="diet-routine-table-body-text">
+                                            <button class="cmnBtn border-0">Adjust Time</button>
+                                        </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i> </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i> </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i> </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i> </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="diet-routine-table-body">
+                                        <div class="diet-routine-table-body-text">
+                                            <input type="text" class="diet-meals-title" value="Picked Lunch">
+                                        </div>
+                                        <div class="diet-routine-table-body-text">
+                                            <button class="cmnBtn border-0">Adjust Time</button>
+                                        </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="diet-routine-table-body">
+                                        <div class="diet-routine-table-body-text">
+                                            <input type="text" class="diet-meals-title" value="Lunch">
+                                        </div>
+                                        <div class="diet-routine-table-body-text">
+                                            <button class="cmnBtn border-0">Adjust Time</button>
+                                        </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i> </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i> </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i> </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="diet-routine-table-body">
+                                        <div class="diet-routine-table-body-text">
+                                            <input type="text" class="diet-meals-title" value="Evening Snack">
+                                        </div>
+                                        <div class="diet-routine-table-body-text">
+                                            <button class="cmnBtn border-0">Adjust Time</button>
+                                        </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day" id="oneDay">
+                                            <i class="fas fa-check"></i> </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i> </div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="diet-routine-table-body-text choose-diet-day">
+                                            <i class="fas fa-check"></i></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <button id="addDietRoutineRow" class="addMore-btn border-0 float-left"> 
+                                    <img src="images/svg/add more plus.svg" alt="add more plus">
+                                    Add More
+                                </button>
+                            </div>
+                            <div id="diet-routine-table-btn">
+                                <div class="d-flex btn-bootom justify-content-end diet-routine-bottom-btn">
+                                    <button id="createDietRoutineBtn" class="cmnBtn border-0 mr-3">Create Now</button>
+                                    <button id="cancelDietRoutineBtn" class="cmnBtn">Cancel</button>
+                                </div>
+                                <div class="d-none btn-bootom justify-content-end diet-routine-bottom-btn">
+                                    <button id="afterEditSaveDietRoutineBtn" class="cmnBtn border-0 mr-3">Save</button>
+                                    <button id="cancelEditDietRoutineBtn" class="cmnBtn">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- diet routine end here -->
+                    <!-- diet routine end here -->
+                    <!-- diet routine end here -->
+
+
                 </div>
 
-                <!-- routine table end here -->
-                <!-- routine table end here -->
+
             </div>
-            <!-- add routine section end -->
-            <!-- add routine section end -->
-            <!-- add routine section end -->
+            <!-- add routine(class,diet,workout) section end -->
+            <!-- add routine(class,diet,workout) section end -->
+            <!-- add routine(class,diet,workout) section end -->
         </div>
 
 
 
 
 
-        </div>
+
         <!-- end user academic-activities-section in  dashboard -->
         <!-- end user academic-activities-section in  dashboard -->
         <!-- end user academic-activities-section in  dashboard -->
@@ -1306,7 +1553,76 @@
         <!-- cancel-routine-popup text  end -->
 
 
+        <!-- ===================================================
+                        diet routine popup start
+        =================================================== -->
 
+        <div id="diet-rotine-chooseDay-popup" class="popup-text">
+            <h4 class="text-capitalize text-center">Choose Day</h4>
+            <div class="d-flex justify-content-between diet-chooseDay-inner">
+                <div>
+                    <div class="d-flex justify-content-between">
+                        <label for="dietSat" class="checkbox-container text-capitalize">Saturday
+                        <input id="dietSat" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                        <input id="satardayTime" type="time" class="diet-select-time">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="dietSun" class="checkbox-container text-capitalize">Sunday
+                        <input id="dietSun" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                        <input type="time" id="sundayTime" class="diet-select-time">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="dietMon" class="checkbox-container text-capitalize">Monday
+                        <input id="dietMon" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                        <input type="time" id="mondayTime" class="diet-select-time">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="dietTues" class="checkbox-container text-capitalize">Tuesday
+                        <input id="dietTues" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                        <input type="time" id="tuesdayTime" class="diet-select-time">
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between">
+                        <label for="dietWed" class="checkbox-container text-capitalize">Wednesday
+                    <input id="dietWed"  type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                        <input type="time" id="wednesdayTime" class="diet-select-time">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="dietThurs" class="checkbox-container text-capitalize">Thursday
+                    <input id="dietThurs" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                        <input type="time" id="thursdayTime" class="diet-select-time">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label for="dietFri" class="checkbox-container text-capitalize">Friday
+                    <input id="dietFri" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                        <input type="time" id="fridayTime" class="diet-select-time">
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-end btn-bootom">
+                <button id="dietRoutineSave" class="cmnBtn mr-4 border-0">Save</button>
+                <button id="dietRoutineSaveCancel" class="cmnBtn">Cancel</button>
+            </div>
+        </div>
+        <!-- ===================================================
+                        diet routine popup end
+        =================================================== -->
 
 
 

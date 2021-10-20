@@ -30,70 +30,113 @@ const cancleRoutineDeletePopup = document.getElementById("cancleRoutineDeleteBtn
 const yesCreateRoutineCancelBtn = document.getElementById("yes_CreateRoutine_CancelBtn")
 const noCreateRoutineBtn = document.getElementById("no_CreateRoutine_Btn")
 const createdNewClassRoutine = document.getElementById("created-new-classRoutine")
+const afterEditRoutineSaveBtn = document.getElementById("afterEditRoutineSaveBtn")
+const editRoutineCancelBtn = document.getElementById("cancelEditRoutineSaveBtn")
+    // diet routine start
+const addDietRoutineTableRow = document.getElementById("addDietRoutineRow")
+const createdDietRoutine = document.getElementById("created-diet-routine")
+const dietChoosDateNextBtn = document.getElementById("dietChoosDateNextBtn")
+const dietChoosDateCancelBtn = document.getElementById("dietChoosDateCancelBtn")
+const createDietRoutineBtn = document.getElementById("createDietRoutineBtn")
+const dietRoutineSaveCancelBtn = document.getElementById("dietRoutineSaveCancel")
+const cancelDietRoutineBtn = document.getElementById("cancelDietRoutineBtn")
 
 
 
 
-// class routine start here
-// handleClassRoutine  for make class routine
+// class routine js start here
+// class routine js start here
+// class routine js start here
+
+
+// handleClassRoutine for make class routine active btn
 handleClassRoutine.addEventListener("click", () => {
-    handleClassRoutine.style.color = "#E22222"
-    handleClassRoutine.style.borderColor = "#E22222"
-    handleDietRoutine.style.color = "#666666"
-    handleDietRoutine.style.borderColor = "#666666"
-    handleWorkoutRoutine.style.color = "#666666"
-    handleWorkoutRoutine.style.borderColor = "#666666"
-})
-
-
-// handleDietRoutine for make class routine
-handleDietRoutine.addEventListener("click", () => {
-        handleDietRoutine.style.color = "#E22222"
-        handleDietRoutine.style.borderColor = "#E22222"
-        handleClassRoutine.style.color = "#666666"
-        handleClassRoutine.style.borderColor = "#666666"
-        handleWorkoutRoutine.style.color = "#666666"
-        handleWorkoutRoutine.style.borderColor = "#666666"
+        routineButtonGroupColorMangaement(handleClassRoutine, handleDietRoutine, handleWorkoutRoutine)
+        document.querySelector(".diet-routine-input").style.display = "none"
+        document.querySelector(".diet-routine-section-table").style.display = "none"
+        document.querySelector("#diet-routine-getuserInput").style.display = "none"
+        displayShowHideElement("#created-class-routine", "#created-diet-routine")
     })
-    // handleDietRoutine for make class routine
-handleWorkoutRoutine.addEventListener("click", () => {
-    handleWorkoutRoutine.style.color = "#E22222"
-    handleWorkoutRoutine.style.borderColor = "#E22222"
-    handleClassRoutine.style.color = "#666666"
-    handleClassRoutine.style.borderColor = "#666666"
-    handleDietRoutine.style.color = "#666666"
-    handleDietRoutine.style.borderColor = "#666666  "
+    // handleDietRoutine for make class routine active btn
+handleDietRoutine.addEventListener("click", () => {
+    routineButtonGroupColorMangaement(handleDietRoutine, handleClassRoutine, handleWorkoutRoutine)
 })
+
+
+// handleWorkOutRoutine for make class routine active btn
+handleWorkoutRoutine.addEventListener("click", () => {
+    routineButtonGroupColorMangaement(handleWorkoutRoutine, handleClassRoutine, handleDietRoutine)
+})
+
+
+// class routine function area
+
+// routineButtonGroupColorMangaement function 
+function routineButtonGroupColorMangaement(activeColorId, fixedColor_1_Id, fixedColor_2_Id) {
+    activeColorId.style.color = "#E22222"
+    activeColorId.style.borderColor = "#E22222"
+    fixedColor_1_Id.style.color = "#666666"
+    fixedColor_1_Id.style.borderColor = "#666666"
+    fixedColor_2_Id.style.color = "#666666"
+    fixedColor_2_Id.style.borderColor = "#666666  "
+}
+
+
+// display show and hide by id/class function start here 
+
+function displayShowHideElement(displayShowId, displayHideId) {
+    document.querySelector(displayShowId).style.display = "block"
+    document.querySelector(displayHideId).style.display = "none"
+}
 
 // class routine plus(create a routin) icon handelerr
 createdClassRoutineIconBtn.addEventListener("click", () => {
-    document.getElementById("routine-user-input").style.display = "block"
-    createdClassRoutineIconBtn.style.display = "none"
+    displayShowHideElement("#routine-user-input", "#created-class-routine")
 })
+
 
 // handle user choose day selection btn
 classRoutineChoosDayNext.addEventListener("click", () => {
-    document.getElementById("class-routine-table-section").style.display = "block"
-    document.getElementById("routine-user-input").style.display = "none"
+    displayShowHideElement("#class-routine-table-section", "#routine-user-input")
+    document.getElementById("classroutine-editBtn-bottom").style.display = "none"
 })
 
 // handle user cancel choose day btn
 classRoutineCancelChoosDay.addEventListener("click", () => {
-    document.getElementById("created-class-routine").style.display = "block"
-    document.getElementById("routine-user-input").style.display = "none"
+    displayShowHideElement("#created-class-routine", "#routine-user-input")
 })
 
 // handle create routine btn
 createClassRoutineBtn.addEventListener("click", () => {
-    document.getElementById("class-routine-table-section").style.display = "none"
-    document.getElementById("after-created-routine").style.display = "block"
+    displayShowHideElement("#after-created-routine", "#class-routine-table-section")
 })
 
 // handle edit routine
 editClassRoutineBtn.addEventListener("click", () => {
     document.getElementById("class-routine-table-section").style.display = "block"
     document.getElementById("after-created-routine").style.display = "none"
+    document.getElementById("classroutine-editBtn-bottom").style.display = "block"
+    document.getElementById("classroutine-editBtn-top").style.display = "none"
 })
+
+// handle edit routine
+afterEditRoutineSaveBtn.addEventListener("click", () => {
+    document.getElementById("class-routine-table-section").style.display = "none"
+    document.getElementById("after-created-routine").style.display = "block"
+})
+
+
+
+// editRoutineCancelBtn hanldeler
+editRoutineCancelBtn.addEventListener("click", () => {
+    document.getElementById("class-routine-table-section").style.display = "none"
+    document.getElementById("after-created-routine").style.display = "block"
+    document.getElementById("classroutine-editBtn-bottom").style.display = "none"
+
+})
+
+
+
 
 // handle edit routine and show delete pop up
 removeClassRoutineBtn.addEventListener("click", () => {
@@ -115,15 +158,16 @@ cancleRoutineDeletePopup.addEventListener("click", () => {
 
 // handle  remove routine pop up box
 confirmRoutineDeletePopupBtn.addEventListener("click", () => {
-        document.getElementById("after-created-routine").style.display = "none"
-        document.getElementById("delete-routine-popup").style.display = "none"
-        document.getElementById("academic-activities-section").style.filter = "blur(0)" //remove blur from display
-        document.querySelector(".top-nav-bar-section").style.filter = "blur(0)" //remove blur from display
-        document.querySelector(".vendor-section").style.filter = "blur(0)" //remove blur from display
-        document.getElementById("created-class-routine").style.display = "block"
+    document.getElementById("after-created-routine").style.display = "none"
+    document.getElementById("delete-routine-popup").style.display = "none"
+    document.getElementById("academic-activities-section").style.filter = "blur(0)" //remove blur from display
+    document.querySelector(".top-nav-bar-section").style.filter = "blur(0)" //remove blur from display
+    document.querySelector(".vendor-section").style.filter = "blur(0)" //remove blur from display
+    document.getElementById("created-class-routine").style.display = "block"
 
-    })
-    // handle  remove routine pop up box
+})
+
+// handle  remove routine pop up box
 cancelCreateRoutineBtn.addEventListener("click", () => {
     document.getElementById("cancel-routine-popup").style.display = "block"
     document.getElementById("academic-activities-section").style.filter = "blur(2px)" //remove blur from display
@@ -165,7 +209,6 @@ createdNewClassRoutine.addEventListener("click", () => {
 
 // handle routine table coloum
 handleAddMoreRoutineBtn.addEventListener("click", () => {
-    console.log("hi")
     const tableCol = document.createElement("div")
     tableCol.className = "routine-coloum order-3"
     tableCol.innerHTML =
@@ -208,6 +251,130 @@ handleAddMoreRoutineBtn.addEventListener("click", () => {
 //========================================================================================================
 
 
+
+// ========================================================================================================
+//==================================diet routine start here===============================================
+//========================================================================================================
+
+addDietRoutineTableRow.addEventListener("click", () => {
+    const dietRoutineTableRow = document.createElement("div")
+    dietRoutineTableRow.className = "diet-routine-table-body"
+    dietRoutineTableRow.innerHTML = `
+                        <div class="diet-routine-table-body-text">
+                            <input type="text" class="diet-meals-title">
+                        </div>
+                        <div class="diet-routine-table-body-text">
+                            <button class="cmnBtn border-0">Adjust Time</button>
+                        </div>
+                        <div class="diet-routine-table-body-text choose-diet-day"> </div>
+                        <div class="diet-routine-table-body-text choose-diet-day"> </div>
+                        <div class="diet-routine-table-body-text choose-diet-day"> </div>
+                        <div class="diet-routine-table-body-text choose-diet-day"> </div>
+                        <div class="diet-routine-table-body-text choose-diet-day"> </div>
+                        <div class="diet-routine-table-body-text choose-diet-day"> </div>
+                        <div class="diet-routine-table-body-text choose-diet-day"> </div>
+                        <div class="clear"></div>         
+    `
+    document.querySelector("#diet-routine-table").appendChild(dietRoutineTableRow)
+})
+
+handleDietRoutine.addEventListener("click", () => {
+    // document.querySelector("#created-class-routine").style.display = "none"
+    // document.querySelector("#created-diet-routine").style.display = "block"
+    displayShowHideElement("#created-diet-routine", "#created-class-routine")
+    document.querySelector("#routine-user-input").style.display = "none"
+
+})
+
+// handle create a diet routine 
+createdDietRoutine.addEventListener("click", () => {
+    // document.querySelector("#created-diet-routine").style.display = "none"
+    // document.querySelector("#routine-user-input").style.display = "block"
+    displayShowHideElement(".diet-routine-input", "#created-diet-routine");
+})
+
+// cancel create a diet routine
+dietChoosDateCancelBtn.addEventListener("click", () => {
+    displayShowHideElement("#created-diet-routine", ".diet-routine-input")
+})
+
+// after user get input processed to next next option
+dietChoosDateNextBtn.addEventListener("click", () => {
+    displayShowHideElement("#diet-routine-getuserInput", ".diet-routine-input")
+    document.querySelector(".diet-routine-section-table").style.display = "block"
+    document.querySelector("#diet-routine-table-btn").style.display = "block"
+})
+
+
+// create diet routine 
+
+var adjustTime = document.querySelector(".diet-routine-table-body-text .cmnBtn")
+adjustTime.addEventListener("click", () => {
+    displayShowHideElement("#diet-rotine-chooseDay-popup", "#diet-routine-table-btn")
+    document.querySelector("#diet-routine-getuserInput").style.display = "none "
+    document.querySelector(".diet-routine-section-table").style.filter = "blur(2px)"
+    document.querySelector(".diet-routine-section-table").style.backgroundColor = "#FDEBEB"
+    var cols = document.getElementsByClassName('diet-meals-title');
+    for (i = 0; i < cols.length; i++) {
+        cols[i].style.backgroundColor = '#FDEBEB';
+    }
+
+})
+
+// cancel adjust time diet routine 
+dietRoutineSaveCancelBtn.addEventListener("click", () => {
+    displayShowHideElement("#diet-routine-table-btn ", "#diet-rotine-chooseDay-popup")
+    document.querySelector("#diet-routine-getuserInput").style.display = "block "
+    document.querySelector(".diet-routine-section-table").style.filter = "blur(0px)"
+    document.querySelector(".diet-routine-section-table").style.backgroundColor = "#fff"
+    var cols = document.getElementsByClassName('diet-meals-title');
+    for (i = 0; i < cols.length; i++) {
+        cols[i].style.backgroundColor = '#fff';
+    }
+
+})
+
+
+cancelDietRoutineBtn.addEventListener("click", () => {
+    // document.getElementById("diet-routine-section").style.display = "none"
+    // document.getElementById("created-diet-routine").style.display = "block"
+
+})
+
+// choose day logic here 
+// var a = document.getElementById("dietSat")
+// var b = document.getElementsByClassName("diet-routine-table-body-text")
+// const firstChild = document.querySelector("#oneDay")
+
+// function checkedChooseDay() {
+//     if (a) {
+//         firstChild.innerHTML = `<span style="font-size=10px">Checked</span>`
+//         a.setAttribute
+//         console.log("html add")
+//     } else {
+//         firstChild.innerHTML = ""
+//     }
+// }
+
+
+// a.addEventListener("click", () => {
+//     checkedChooseDay()
+//     console.log("hello checkbox")
+// })
+
+
+
+// ========================================================================================================
+//==================================diet routine end here===============================================
+//========================================================================================================
+
+
+
+
+// =========================================
+//  start booklist  activities
+// =======================================
+
 //handle oflineUserBtn btn
 oflineUserBtn.addEventListener('click', () =>
     changeBtnColor("#E22222", "#E22222", "#666666", "#d3d3d3")
@@ -236,8 +403,7 @@ handleCreateGroupBtn.addEventListener("click", () => {
 
 // add booklist handleer booklist card activities
 handleBookList.addEventListener('click', () => {
-    document.querySelector("#created-book-list").style.display = 'block'
-    document.querySelector("#booklist-table").style.display = "none"
+    displayShowHideElement("#created-book-list", "#booklist-table")
     document.querySelector("#booklist-edit").style.display = "none"
 })
 
@@ -246,17 +412,6 @@ handleBookList.addEventListener('click', () => {
 handleRoutineCard.addEventListener("click", () => {
     document.getElementById("routine-top-btn-section").style.display = "block"
 })
-
-
-// const acaemicActivitiesCreateBtn = (e) => {
-//     if (e === "handleBookList" || e === "routine-card") {
-//         document.querySelector("#created-book-list").style.display = 'block'
-//     }
-//     //else
-//     else {
-//         console.log("dont work")
-//     }
-// }
 
 
 
@@ -351,3 +506,8 @@ addMoreBookList.addEventListener("click", () => {
     document.getElementById("main-table").appendChild(tableRow)
 
 })
+
+
+// =========================================
+//  end booklist  activities
+// =======================================

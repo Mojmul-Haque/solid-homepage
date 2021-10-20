@@ -827,7 +827,7 @@ button:focus {
 
 .btn-bootom .cmnBtn {
     color: #fff;
-    width: 130px;
+    width: 160px;
     height: 45px;
     background: #E22424;
     border-radius: 5px;
@@ -994,60 +994,47 @@ button:focus {
 }
 
 
-/* width */
+/* Scrollbar customization */
+
+.routine-table-body-section {
+    overflow-y: auto;
+}
 
 .routine-table-body-section::-webkit-scrollbar {
-    /* width: 10px; */
-    /* border-radius: 10px; */
-    background: red;
+    width: 10px;
+    height: 10px;
 }
 
 .routine-table-body-section::-webkit-scrollbar-track {
-    background: rgb(3, 114, 108);
-    border-radius: 50px;
-    width: 3px;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
 }
 
 .routine-table-body-section::-webkit-scrollbar-thumb {
-    background: blue;
-    border-radius: 50px;
-    height: 1px;
-    padding: 3px 0;
-    /* border: 0.2vw solid rgba(0, 0, 0, 0); */
-    border: 1px solid black;
+    background: rgb(90, 90, 90);
+    border-radius: 10px;
 }
 
-routine-table-body-section::-webkit-scrollbar-thumb:hover {
-    background: red;
-}
-
-
-/* .routine-table-body-section::-webkit-scrollbar-thumb:hover {
-    background: red;
-}   */
-
-
-/* Scrollbar customization */
-
-
-/* 
 .routine-table-body-section::-webkit-scrollbar-button:single-button {
+    background-color: white;
     display: block;
+    border-style: solid;
+    height: 1.5vw;
+    width: 1vw;
 }
 
 .routine-table-body-section::-webkit-scrollbar-button:single-button:horizontal:decrement {
-    border-width: 0vw 0.3vw 0.4vw 0 0.3vw;
-    border-color: transparent black transparent rgb(0, 255, 106);
-    border-style: solid;
+    border-width: 5px;
+    border-color: transparent grey transparent transparent;
 }
 
 .routine-table-body-section::-webkit-scrollbar-button:single-button:horizontal:increment {
-    border-width: 0vw 0.3vw 0.4vw 0 0.3vw;
-    border-color: #7c0909 transparent transparent transparent;
-} */
+    border-width: 5px;
+    border-color: transparent transparent transparent grey;
+}
 
 
-/* Scrollbar customization end */
+/* scrol bar customization  end*/
 
 .addColoum-margin {
     margin-right: 40px;
@@ -1134,7 +1121,7 @@ input:focus-visible {
     margin-top: 5px;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator {
+.time-input-container input[type="time"]::-webkit-calendar-picker-indicator {
     background-color: #E22222;
     width: 20px;
     height: 100%;
@@ -1184,6 +1171,31 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 
+#diet-routine {
+    position: relative;
+    padding-left: 13px !important;
+}
+
+#diet-routine::after {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 1px;
+    height: 21px;
+    background: rgb(102 102 102 / 68%);
+}
+
+#diet-routine::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 1px;
+    height: 21px;
+    background: rgb(102 102 102 / 68%);
+}
+
 #after-created-routine .user-edit-input {
     margin: 0;
     margin-right: 8px;
@@ -1222,13 +1234,280 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 
-/* routine table section end  */
+/* class routine table section end  */
 
 
 /* routine table section end  */
 
 
 /* routine section end  */
+
+
+/* diet routine start here  */
+
+
+/* ===================================  
+diet routine section start
+=====================================*/
+
+.diet-routine-input {
+    display: none;
+}
+
+#diet-routine-section .selectDiet-date {
+    height: 50px;
+    margin-bottom: 29px;
+    width: 215px;
+    padding: 0 14px;
+    border-radius: 5px;
+    border: 1px solid red;
+    padding-left: 51px;
+}
+
+.diet-routine-section-table {
+    overflow: auto;
+    height: 400px;
+}
+
+.clear {
+    clear: both;
+}
+
+.diet-routine-table {
+    width: 200%;
+    text-align: center;
+}
+
+.diet-routine-table-head-caption {
+    float: left;
+    width: 11.34%;
+    background: #e22424;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #00000075;
+}
+
+.diet-routine-table-head-caption:first-child {
+    border-top-left-radius: 6px;
+}
+
+.last-day {
+    border-top-right-radius: 6px;
+}
+
+.diet-routine-table-head-caption:last-child,
+.diet-routine-table-body-text:last-child {
+    margin-right: 30px;
+}
+
+.diet-routine-table-body-text {
+    float: left;
+    width: 11.34%;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #D5D5D5;
+}
+
+.diet-routine-table-body-text:first-child {
+    border-left: 1px solid #D5D5D5;
+}
+
+.diet-routine-table-head-caption:nth-child(2),
+.diet-routine-table-body-text:nth-child(2) {
+    width: 8%;
+}
+
+.diet-meals-title {
+    width: 100%;
+    height: 59px;
+    border: 0;
+    padding: 21px;
+    text-align: center;
+}
+
+.choose-diet-day {
+    /* padding: 15px; when i = display :block */
+    padding: 29px
+}
+
+.choose-diet-day i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: green;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #00000075;
+    display: none;
+}
+
+.diet-select-time {
+    margin: 13px 0 21px;
+    border: 1px solid #e22424;
+    padding: 0px 7px;
+    font-size: 14px;
+}
+
+.diet-routine-section-table .addMore-btn {
+    background: transparent;
+    margin-top: 28px;
+    margin-left: 15px;
+}
+
+
+/* scroolbar customization */
+
+.diet-routine-section-table::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.diet-routine-section-table::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.diet-routine-section-table::-webkit-scrollbar-thumb {
+    background: rgb(90, 90, 90);
+    border-radius: 10px;
+}
+
+.diet-routine-section-table::-webkit-scrollbar-button:single-button {
+    background-color: white;
+    display: block;
+    border-style: solid;
+    height: 1.5vw;
+    width: 1vw;
+}
+
+.diet-routine-section-table::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    border-width: 5px;
+    border-color: transparent grey transparent transparent;
+}
+
+.diet-routine-section-table::-webkit-scrollbar-button:single-button:horizontal:increment {
+    border-width: 5px;
+    border-color: transparent transparent transparent grey;
+}
+
+.diet-routine-section-table::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0vw .3vw 0.4vw .3vw;
+    border-color: transparent transparent #555555 transparent;
+}
+
+.diet-routine-section-table::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 0vw 0.3vw 0.4vw 0 0.3vw;
+    border-color: #555555 transparent transparent transparent;
+}
+
+
+/* scroll barr customization end */
+
+.diet-routine-bottom-btn {
+    margin-top: 60px;
+}
+
+#diet-rotine-chooseDay-popup {
+    width: 654px;
+    padding: 31px 28px;
+    display: none;
+}
+
+#diet-rotine-chooseDay-popup .diet-select-time {
+    margin-left: 50px;
+    margin-top: 0;
+}
+
+#diet-rotine-chooseDay-popup .checkbox-container {
+    padding-left: 33px;
+}
+
+#diet-rotine-chooseDay-popup .chooseday-checkbox {
+    margin-bottom: 0;
+}
+
+.diet-chooseDay-inner {
+    margin: 30px 0 20px;
+}
+
+.diet-routine-inner .user-edit-input {
+    margin: 0;
+    margin-right: 42px;
+}
+
+.diet-routine-edit-section {
+    margin: 33px 0 38px;
+}
+
+#diet-routine-section .calendar {
+    width: 60px;
+    height: 50px;
+    background: red;
+    border-radius: 8px;
+    margin-right: -6px;
+    z-index: 1;
+}
+
+#diet-routine-section .calendar img {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.select-date-field {
+    position: relative;
+}
+
+.left-angel,
+.right-angel {
+    z-index: 99;
+    position: absolute;
+    top: 10px;
+}
+
+.right-angel {
+    right: 18px;
+}
+
+.left-angel {
+    left: 17px;
+}
+
+#diet-routine-getuserInput .calendar {
+    margin-top: -29px;
+}
+
+#diet-routine-getuserInput .choose-day {
+    font-size: 18px;
+    margin-right: 15px;
+    color: #C7C7C7;
+}
+
+#diet-routine-getusertInput,
+#diet-routine-edit-section,
+#diet-routine-getuserInput,
+.diet-routine-section-table,
+#diet-routine-table-btn,
+#created-diet-routine {
+    display: none;
+}
+
+.cmnBtn {
+    color: #fff;
+    width: 160px;
+    height: 45px;
+    background: #E22424;
+    border-radius: 5px;
+}
+
+.diet-routine-table-body-text .cmnBtn {
+    margin: 7px 0;
+}
+
+
+/* diet routine end here  */
+
+
+/* diet routine end here  */
 
 
 /* routine section end  */
